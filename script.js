@@ -92,6 +92,7 @@ $(document).on('click', '.saveBtn', function (event) {
     }
     get = JSON.parse(get);
     get[hourClicked] = userInput;
+    console.log('about to save tocal storage!!', get)
     localStorage.setItem("get", JSON.stringify(get));
 
 });
